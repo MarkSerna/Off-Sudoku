@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PluralsCandidate">
+    <string name="difficulty_very_easy">Very Easy</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_medium">Medium</string>
+    <string name="difficulty_hard">Hard</string>
+    <string name="difficulty_expert">Expert</string>
+
+    <string name="difficulty_very_easy_desc">Gentle warm-up solved with singles</string>
+    <string name="difficulty_easy_desc">Light deduction with hidden singles</string>
+    <string name="difficulty_medium_desc">Pointing pairs &amp; naked pairs</string>
+    <string name="difficulty_hard_desc">Subsets and deeper eliminations</string>
+    <string name="difficulty_expert_desc">X-Wing, XY-Wing &amp; Swordfish logic</string>
+
+    <string name="home_title">Sudoku</string>
+    <string name="home_subtitle" formatted="false">100% offline logic collection</string>
+    <string name="home_continue_title">Continue puzzle</string>
+    <string name="home_continue_meta">%1$s · %2$s · %3$d/81</string>
+    <string name="home_continue_cta">Resume</string>
+    <string name="home_quick_play">Play now</string>
+    <string name="home_new_game">New game</string>
+    <string name="home_daily_title">Daily puzzle</string>
+    <string name="home_daily_subtitle">%1$s · %2$s</string>
+    <string name="home_daily_completed">Completed today</string>
+    <string name="home_daily_play">Play daily</string>
+    <string name="home_stats">Statistics</string>
+    <string name="home_settings">Settings</string>
+    <string name="home_choose_difficulty">Choose difficulty</string>
+    <string name="home_daily_badge">Daily</string>
+
+    <string name="cd_back">Navigate back</string>
+    <string name="cd_pause">Pause game</string>
+    <string name="cd_resume">Resume game</string>
+    <string name="game_daily_label">Daily · %1$s</string>
+    <string name="game_mistakes_label">Mistakes: %1$d</string>
+    <string name="game_hints_left">%1$d</string>
+    <string name="game_hints_unlimited">∞</string>
+
+    <string name="action_undo">Undo</string>
+    <string name="action_redo">Redo</string>
+    <string name="action_erase">Erase</string>
+    <string name="action_notes">Notes</string>
+    <string name="action_notes_on">Notes ON</string>
+    <string name="action_hint">Hint</string>
+    <string name="action_check">Check</string>
+
+    <string name="hint_sheet_title">Need a hint?</string>
+    <string name="hint_explain_title">Explain next technique</string>
+    <string name="hint_explain_desc">Highlights the logic step without spoiling immediately</string>
+    <string name="hint_reveal_title">Reveal cell</string>
+    <string name="hint_reveal_desc">Fills the selected or next empty cell directly</string>
+    <string name="hint_apply">Apply step</string>
+    <string name="hint_dismiss">Dismiss</string>
+    <string name="hint_wrong_cells_title">Check existing entries</string>
+    <string name="hint_wrong_cells_desc">%1$d placed number(s) conflict with the solution. Fix or erase highlighted cells first.</string>
+    <string name="hint_fallback_title">Direct deduction</string>
+    <string name="hint_fallback_desc">Row %1$d, column %2$d resolves to %3$d.</string>
+
+    <string name="msg_hints_exhausted">No hints remaining for this puzzle</string>
+    <string name="msg_no_errors_found">All placed numbers look valid</string>
+    <string name="msg_errors_found">%1$d incorrect number(s) highlighted</string>
+
+    <string name="pause_title">Game paused</string>
+    <string name="pause_board_hidden">Board hidden while paused</string>
+    <string name="pause_resume">Resume</string>
+    <string name="pause_restart">Restart puzzle</string>
+    <string name="pause_home">Back to Home</string>
+
+    <string name="victory_title">Puzzle solved!</string>
+    <string name="victory_daily_subtitle">Daily challenge complete</string>
+    <string name="victory_new_best">New best time</string>
+    <string name="victory_stat_time">Time</string>
+    <string name="victory_stat_mistakes">Mistakes</string>
+    <string name="victory_stat_hints">Hints</string>
+    <string name="victory_new_game">New game</string>
+    <string name="victory_home">Home</string>
+
+    <string name="unit_row_arg">Row %1$d</string>
+    <string name="unit_col_arg">Column %1$d</string>
+    <string name="unit_box_arg">Box %1$d</string>
+
+    <string name="cd_cell_empty">Row %1$d, column %2$d, empty</string>
+    <string name="cd_cell_fixed">Row %1$d, column %2$d, fixed %3$d</string>
+    <string name="cd_cell_value">Row %1$d, column %2$d, value %3$d</string>
+    <string name="cd_cell_error_suffix">, incorrect</string>
+    <string name="cd_cell_notes_suffix">, notes %1$s</string>
+    <string name="cd_number_key">Number %1$d, %2$d remaining</string>
+
+    <string name="tech_name_naked_single">Naked Single</string>
+    <string name="tech_explain_naked_single">Row %1$d, column %2$d has only %3$d left as a valid candidate.</string>
+    <string name="tech_name_hidden_single">Hidden Single</string>
+    <string name="tech_explain_hidden_single">In %4$s, %3$d can only go in row %1$d, column %2$d.</string>
+    <string name="tech_name_pointing">Pointing Candidates</string>
+    <string name="tech_explain_pointing">In %1$s, %2$d is aligned on one line, clearing %3$d outside the box.</string>
+    <string name="tech_name_box_line">Box-Line Reduction</string>
+    <string name="tech_explain_box_line">In %1$s, %2$d is locked in one box, clearing %3$d elsewhere in that box.</string>
+    <string name="tech_name_naked_pair">Naked Pair</string>
+    <string name="tech_explain_naked_pair">Two cells in %1$s share the same pair of candidates, eliminating %2$d other candidate(s).</string>
+    <string name="tech_name_hidden_pair">Hidden Pair</string>
+    <string name="tech_explain_hidden_pair">Two digits in %1$s appear in only two cells, trimming %2$d extra candidate(s).</string>
+    <string name="tech_name_naked_triple">Naked Triple</string>
+    <string name="tech_explain_naked_triple">Three cells in %1$s share three digits, eliminating %2$d other candidate(s).</string>
+    <string name="tech_name_hidden_triple">Hidden Triple</string>
+    <string name="tech_explain_hidden_triple">Three digits in %1$s are confined to three cells, trimming %2$d extra candidate(s).</string>
+    <string name="tech_name_x_wing">X-Wing</string>
+    <string name="tech_explain_x_wing">Digit %1$d forms an X-Wing rectangle across two lines, clearing %2$d candidate(s).</string>
+    <string name="tech_name_xy_wing">XY-Wing</string>
+    <string name="tech_explain_xy_wing">An XY-Wing pivot and two pincers eliminate %1$d from %2$d shared cell(s).</string>
+    <string name="tech_name_naked_quad">Naked Quad</string>
+    <string name="tech_explain_naked_quad">Four cells in %1$s lock four digits, clearing %2$d other candidate(s).</string>
+    <string name="tech_name_swordfish">Swordfish</string>
+    <string name="tech_explain_swordfish">Digit %1$d forms a 3-line Swordfish pattern, clearing %2$d candidate(s).</string>
+
+    <string name="home_daily_streak_cd">Daily streak: %1$d days</string>
+    <string name="victory_achievements_unlocked">Unlocked achievements</string>
+
+    <string name="stats_screen_title">Statistics</string>
+    <string name="stats_tab_overview">Overview</string>
+    <string name="stats_tab_achievements">Achievements</string>
+    <string name="stats_daily_section">Daily Challenge</string>
+    <string name="stats_daily_total">Completed</string>
+    <string name="stats_daily_current_streak">Current streak</string>
+    <string name="stats_daily_best_streak">Best streak</string>
+    <string name="stats_daily_last_14">Last 14 days</string>
+    <string name="stats_metric_played">Played</string>
+    <string name="stats_metric_won">Won</string>
+    <string name="stats_metric_win_rate">Win rate</string>
+    <string name="stats_metric_best_time">Best time</string>
+    <string name="stats_metric_avg_time">Avg. time</string>
+    <string name="stats_metric_streak">Win streak</string>
+    <string name="stats_metric_best_streak">Best streak</string>
+    <string name="stats_metric_flawless">No mistakes</string>
+    <string name="stats_metric_no_hints">No hints</string>
+    <string name="stats_no_time">—</string>
+    <string name="achievements_progress">%1$d of %2$d unlocked</string>
+    <string name="achievement_unlocked_on">Unlocked %1$s</string>
+    <string name="achievement_locked">Locked</string>
+
+    <string name="ach_first_win_title">First Step</string>
+    <string name="ach_first_win_desc">Complete your first Sudoku puzzle</string>
+    <string name="ach_no_hints_title">Pure Logic</string>
+    <string name="ach_no_hints_desc">Solve a puzzle without using any hints</string>
+    <string name="ach_flawless_title">Flawless</string>
+    <string name="ach_flawless_desc">Finish a puzzle with zero mistakes</string>
+    <string name="ach_speed_title">Quick Thinker</string>
+    <string name="ach_speed_desc">Solve a puzzle in under 5 minutes</string>
+    <string name="ach_daily_7_title">Weekly Habit</string>
+    <string name="ach_daily_7_desc">Reach a 7-day daily puzzle streak</string>
+    <string name="ach_all_diff_title">All-Rounder</string>
+    <string name="ach_all_diff_desc">Win at least once in all 5 difficulty levels</string>
+    <string name="ach_expert_flawless_title">Grandmaster</string>
+    <string name="ach_expert_flawless_desc">Solve Expert with zero mistakes and zero hints</string>
+    <string name="ach_veteran_25_title">Dedicated Solver</string>
+    <string name="ach_veteran_25_desc">Win 25 Sudoku puzzles</string>
+
+    <string name="settings_screen_title">Settings</string>
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_palette_title">Color theme</string>
+    <string name="palette_dynamic">Dynamic (Material You)</string>
+    <string name="palette_classic">Classic</string>
+    <string name="palette_paper">Paper</string>
+    <string name="palette_ocean">Ocean</string>
+    <string name="palette_forest">Forest</string>
+    <string name="settings_theme_mode">Brightness</string>
+    <string name="theme_mode_system">Auto</string>
+    <string name="theme_mode_light">Light</string>
+    <string name="theme_mode_dark">Dark</string>
+    <string name="settings_colorblind">Colorblind-friendly palette</string>
+    <string name="settings_colorblind_desc">High-contrast Okabe-Ito hues and corner markers</string>
+    <string name="settings_font_scale">Board text size</string>
+    <string name="font_scale_small">Small</string>
+    <string name="font_scale_normal">Normal</string>
+    <string name="font_scale_large">Large</string>
+    <string name="font_scale_extra_large">Extra large</string>
+
+    <string name="settings_section_gameplay">Gameplay &amp; Aids</string>
+    <string name="settings_highlight_peers">Highlight row, column &amp; box</string>
+    <string name="settings_highlight_same">Highlight matching numbers</string>
+    <string name="settings_auto_clear_notes">Auto-clear peer notes</string>
+    <string name="settings_remaining_count">Show remaining counts</string>
+    <string name="settings_error_check">Error checking</string>
+    <string name="error_mode_immediate">Immediate</string>
+    <string name="error_mode_on_demand">On demand</string>
+    <string name="error_mode_off">Off</string>
+    <string name="settings_hint_limit">Hints per game</string>
+    <string name="hint_limit_none">0</string>
+    <string name="hint_limit_unlimited">Unlimited</string>
+    <string name="settings_hint_mode">Default hint action</string>
+    <string name="hint_mode_explain">Ask / Explain first</string>
+    <string name="hint_mode_reveal">Reveal directly</string>
+
+    <string name="settings_section_feedback">Feedback</string>
+    <string name="settings_haptics">Haptic vibration</string>
+    <string name="settings_sound">Subtle sound effects</string>
+
+    <string name="settings_section_language">Language</string>
+    <string name="lang_system">System default</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_en">English</string>
+    <string name="lang_pt">Português</string>
+
+    <string name="settings_section_data">Data</string>
+    <string name="settings_reset_stats">Reset statistics &amp; achievements</string>
+    <string name="settings_reset_stats_desc">Keeps your current active game and preferences</string>
+    <string name="settings_reset_all">Reset all app data</string>
+    <string name="settings_reset_all_desc">Deletes active game, stats, achievements, and preferences</string>
+    <string name="dialog_reset_stats_title">Reset statistics?</string>
+    <string name="dialog_reset_stats_body">All win counts, best times, daily streaks, and unlocked achievements will be permanently cleared.</string>
+    <string name="dialog_reset_all_title">Reset all data?</string>
+    <string name="dialog_reset_all_body">This will erase all games, statistics, achievements, and restore default settings.</string>
+    <string name="dialog_confirm_reset">Reset</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="pause_meta">%1$s · %2$s</string>
+    <string name="stats_percent_format">%1$d%%</string>
+    <string name="cd_timer_value">Elapsed time %1$s</string>
+    <string name="cd_daily_last_14_summary">%1$d of %2$d recent daily puzzles completed</string>
+    <string name="cd_cell_hint_suffix">, suggested by hint</string>
+    <string name="settings_about_studio">Sudoku · Developed by Altikore</string>
+    <string name="settings_about_offline" formatted="false">100% offline · Zero data collected</string>
+</resources>
